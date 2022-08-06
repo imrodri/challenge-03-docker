@@ -9,3 +9,10 @@ docker run --name bootcamp_container -v static_content:/usr/share/nginx/html -p 
 
 
 ![](/images/reto3/01.png)
+
+
+## Dockerhub push
+
+![](/images/reto3/02.png)
+
+![](/images/reto3/03.png)
