@@ -13,6 +13,9 @@ docker run --name bootcamp_container -v static_content:/usr/share/nginx/html -p 
 
 ## Dockerhub push
 
+https://hub.docker.com/repository/docker/imrodri/bootcamp_nginx
+
+
 ![](/images/reto3/02.png)
 
 ![](/images/reto3/03.png)
