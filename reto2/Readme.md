@@ -10,15 +10,16 @@
    ​	Lanzamos el comando en primer plano para poder leer los posibles mensajes de error que puedan surgir mientras trabajamos desde otra consola. 
    
    ```bash
-   docker run --name bbdd 
-   --env MARIADB_ROOT_PASSWORD=root 
-   --env MARIADB_DATABASE=prueba 
-   --env MARIADB_USER=invitado
-   --env MARIADB_PASSWORD=invitado
-   mariadb --port 3306
+   docker run --name bbdd \
+   -p 3306:3306 \
+   --env MARIADB_ROOT_PASSWORD=root \
+   --env MARIADB_DATABASE=prueba \
+   --env MARIADB_USER=invitado \
+   --env MARIADB_PASSWORD=invitado \
+   mariadb 
    ```
-  
- 2. Pantallazo de la conexión al servidor de base de datos con el usuario creado y de la base de datos `prueba` creada automáticamente.
+
+ 1. Pantallazo de la conexión al servidor de base de datos con el usuario creado y de la base de datos `prueba` creada automáticamente.
 
 Y comprobamos que podemos acceder a la base de datos y que nuestro esquema `prueba` está creado
 
