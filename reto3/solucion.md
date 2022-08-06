@@ -1,8 +1,11 @@
+docker volume create static_content
 
-docker build -t bootcamp:1.0.0 .
+docker build -t bootcamp_nginx:1.0.4 .
+
+sleep 3
+
+docker run --name bootcamp_container -v static_content:/usr/share/nginx/html -p 8080:80 bootcamp_nginx:1.0.4
 
 
-docker run -it -p 8080:80 bootcamp:1.0.0
 
-
-docker exec -t -i container_name /bin/bash
+![](/images/reto3/01.png)
