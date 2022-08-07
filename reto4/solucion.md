@@ -9,3 +9,13 @@ Mas la ejecucion de los contenedores.
 
 
 ![](/images/reto4/01.png)
+
+
+### Inspeccionar la imagen
+
+
+Para poder averiguar el numero de capas o layers podemos hacer uso del siguiente comando:
+
+```
+docker inspect -f '{{.RootFS}}' CONTAINER_NAME
+```
